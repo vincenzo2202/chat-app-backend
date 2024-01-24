@@ -35,6 +35,7 @@ const findUserChats = async (req, res) => {
         });
 
         return res.status(200).json(chats);
+        
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
